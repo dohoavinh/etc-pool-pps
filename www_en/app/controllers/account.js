@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
     get() {
       var diff = Ember.$.cookie('difficulty');
       if (diff) {
-        return this.get('model.hashrate') * 86400 * 2955000000 / diff;
+        return this.get('model.hashrate') * 86400 * 3955000000 / diff;
       }
       return 0;
      }
