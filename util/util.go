@@ -64,7 +64,7 @@ func FormatRatReward(reward *big.Rat) string {
 func GetPPSRate(shareDiff, netDiff int64, height, topHeight uint64, fee float64) float64 {
 	//  base_reward = (1 - fee) * 3 ETH
 	base := new(big.Rat).SetInt(Ether)
-	base.Mul(base, new(big.Rat).SetInt64(3))
+	base.Mul(base, new(big.Rat).SetInt64(4))
 	feePercent := new(big.Rat).SetFloat64(fee / 100)
 	feeValue := new(big.Rat).Mul(base, feePercent)
 	base.Sub(base, feeValue)
