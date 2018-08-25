@@ -31,7 +31,7 @@ export default Ember.Route.extend({
             result += '</span>';
             result += '<p>Estimation is accurate only for zero-variance PPS mode. HVPPS incomings are subject to share based variance.</p>';
             result += '</div>';
-            result += '<h3>Comparation our profit with the World:</h3><div class="note note-danger"><ul class="list-unstyled"><li><a href="https://whattomine.com/coins/162-etc-ethash?hr=' + hashRate + '">Whatomine.com (<small class="text-muted">Mining in Perfect conditional</small>)</a></li><li><a href="https://www.cryptocompare.com/mining/calculator/etc?HashingPower=' + hashRate + '">Cryptocompare.com(<small class="text-muted">Mining in regular Pool in the world</small>)</a></li></ul></div>';
+            result += '<h3>Comparation our profit with the World:</h3><div class="note note-danger"><ul class="list-unstyled"><li><a href="https://whattomine.com/coins/162-etc-ethash?hr=' + hashRate + '" target="_blank">Whatomine.com (<small class="text-muted">Mining in Perfect conditional</small>)</a></li><li><a href="https://www.cryptocompare.com/mining/calculator/etc?HashingPower=' + hashRate + '" target="_blank">Cryptocompare.com(<small class="text-muted">Mining in regular Pool in the world</small>)</a></li></ul></div>';
             result += '</div>';
 
             document.getElementById('calculation-result').innerHTML = result;
