@@ -176,3 +176,15 @@ h4.note {
 .stats > div > span:first-of-type{
 	font-weight: bold;
 }
+
+/*Vinh*/
+
+.navbar-default {
+background-color: #71ad62;
+}
+.navbar-brand img {
+	margin-top:-15px;
+}
+.navbar-default .navbar-nav > .active > a {
+background-color: #4d6d45;
+}
